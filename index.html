@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,22 +20,77 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
+      <i class="fas fa-sun"></i>
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      <i class="fas fa-sun"></i>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
+        <div class="wrapper">
+         <!-- Timeblocks go here -->
+      <ul>
+        <li>
+          <span class= "col-3">09 am</span>
+          <input class= "timeBlocks" type="text" id="9am" />
+          <button class="saveBtn" time="9am"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">10 am</span>
+          <input class = "timeBlocks"  type="text" id="10am" />
+          <button class="saveBtn" time="10am"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">11 am</span>
+          <input class = "timeBlocks"   type="text" id="11am" />
+          <button class="saveBtn" time="11am"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">12 pm</span>
+          <input class = "timeBlocks"  type="text" id="12pm" />
+          <button class="saveBtn" time="12pm"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">01 pm</span>
+          <input class = "timeBlocks"  type="text" id="1pm" />
+          <button class="saveBtn" time="1pm"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">02 pm</span>
+          <input class = "timeBlocks"  type="text" id="2pm" />
+          <button class="saveBtn" time="2pm"><i class="far fa-save"></i></button>
+        <li>
+          <span class= "col-3">03 pm</span>
+          <input class = "timeBlocks"  type="text" id="3pm" />
+          <button class="saveBtn" time="3pm"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">04 pm</span>
+          <input class = "timeBlocks"  type="text" id="4pm" />
+          <button class="saveBtn" time="4pm"><i class="far fa-save"></i></button>
+        </li>
+        <li>
+          <span class= "col-3">05 pm</span>
+          <input class = "timeBlocks"  type="text" id="5pm"/>
+          <button class="saveBtn" time="5pm"><i class="far fa-save"></i></button>
+        </li>
+      </ul>
+    </div>
+    </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https:code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>

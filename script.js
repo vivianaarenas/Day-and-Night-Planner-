@@ -32,6 +32,7 @@ for (var i = 9; i < 18; i++) {
   }
 
   var targetId = "#" + hour + amPm;
+  console.log(targetId);
 
   var timeInput = localStorage.getItem(hour + amPm);
   if (timeInput) {
